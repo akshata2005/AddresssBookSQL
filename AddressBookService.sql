@@ -45,3 +45,46 @@ SELECT COUNT(*) FROM address_Book
 WHERE city = 'Pune'
 
 SELECT COUNT(*) FROM address_Book
+
+SELECT COUNT(state) FROM address_Book
+
+SELECT COUNT(city) FROM address_Book
+
+SELECT first_name FROM address_Book
+ORDER BY city;
+
+ALTER TABLE address_Book
+ADD TYPE varchar(30);
+
+UPDATE address_Book SET TYPE = 'Friend' WHERE first_name = 'Ashish';
+UPDATE address_Book SET TYPE = 'Friend' WHERE first_name = 'Pranoti';
+UPDATE address_Book SET TYPE = 'Family' WHERE first_name = 'Rutuja';
+UPDATE address_Book SET TYPE = 'Family' WHERE first_name = 'Priyanka';
+UPDATE address_Book SET TYPE = 'Profession' WHERE first_name = 'Ayush';
+UPDATE address_Book SET TYPE = 'Profession' WHERE first_name = 'Akash';
+UPDATE address_Book SET TYPE = 'Family' WHERE first_name = 'shivani';
+
+SELECT COUNT(*) FROM address_Book
+WHERE TYPE = 'Friend'
+
+SELECT COUNT(*) FROM address_Book
+WHERE TYPE = 'Family'
+
+SELECT COUNT(*) FROM address_Book
+WHERE TYPE = 'Profession'
+
+INSERT INTO address_Book(first_name,last_name,address,city,state,zip,phone,email,TYPE)
+VALUES ('Prateek','Hajare','Gandhi Park','Pune','Maharashtra',410131,8895352787,'pratikhajare09@gmail.com','Friend'),
+('Anand','Chaudhari','Moshi','Pune','Maharashtra',412301,9089765643,'anand04@gmail.com','Family');
+
+/*Retriving data*/
+SELECT * FROM address_Book
+
+SELECT * FROM address_Book
+WHERE city = 'Ahemdabad'
+
+SELECT first_name FROM address_Book
+ORDER BY city
+
+SELECT COUNT(*) FROM address_Book
+WHERE TYPE = 'Friend'
