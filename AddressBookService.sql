@@ -20,3 +20,11 @@ VALUES ('Akshata','Sawant','Dhanori','Pune','Maharashtra',411015,899197290,'aksh
 ('Rutuja','Pati','Bhosari','Pimpri','Maharashtra',412309,9123654367,'rutujajaid45@gmail.com'),
 ('Pranoti','Sawant','Bhairav nagar','Nasik','Maharahtra',455110,8821056811,'pranotisawant@gmail.com'),
 ('Priyanka','Jamadar','Shvaji Nagar','Pune','Maharashtra',461124,7653809765,'priya03@gmail.com');
+
+SELECT * FROM address_Book;
+
+UPDATE address_Book SET phone = 7898765678
+WHERE first_name = 'Pranoti' AND last_name= 'Sawant';
+
+DELETE FROM address_Book
+WHERE first_name = 'Rutuja' AND last_name='Pati';
